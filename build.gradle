@@ -41,6 +41,6 @@ jar {
   baseName = 'cas'
   version = '1.0'
   manifest {
-    attributes 'Main-Class': 'com.lxiyas.railway.RailwayApplication'
+    attributes 'Main-Class': 'com.lxiyas.railways.railway.RailwayApplication'
   }
 }
