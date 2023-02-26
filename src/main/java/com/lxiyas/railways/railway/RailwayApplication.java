@@ -13,10 +13,6 @@ public class RailwayApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RailwayApplication.class, args);
 	}
-	@Bean
-	public PasswordEncoder encoder() {
-		return new BCryptPasswordEncoder();
-	}
 }
 
 @Configuration
@@ -25,5 +21,10 @@ class MyConfig {
     public String myStringBean() {
         return "myString";
     }
+
+	@Bean
+	public PasswordEncoder encoder() {
+		return new BCryptPasswordEncoder();
+	}
 }
 
